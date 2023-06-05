@@ -1,23 +1,12 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 <header class="relative w-full">
-  <img
-    class="max-h-screen w-full hidden lg:block"
-    src="{% static 'header2.png' %}"
-    alt=""
-  />
-  <img
-    class="max-h-screen w-full lg:hidden"
-    src="{% static 'images/a.jpg' %}"
-    alt=""
-  />
+  <img class="w-full hidden lg:block" src="{% static 'header2.png' %}" alt="" />
+  <img class="w-full lg:hidden" src="{% static 'images/a.png' %}" alt="" />
 </header>
-<div class="absolute titulo">
+<div class="absolute titulo mx-auto">
   <h1>PAM ROBLES</h1>
   <h2 class="text-4xl nature">Nature Photography</h2>
 </div>
-<!-- <div class="absolute pame">
-  <img class="" src="{% static 'images/pam.png' %}" alt="" />
-</div> -->
 
 <section>
   <img
@@ -49,5 +38,6 @@
     <img src="{% static 'images/20f/1.jpg' %}" alt="" />
   </div>
 </section>
+<footer class="bg-cyan-600">A</footer>
 
 {% endblock %}

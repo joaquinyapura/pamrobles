@@ -9,9 +9,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="{% static 'css/styles.css'  %}" />
   </head>
-  <body class="">
+  <body>
     {% block content %} {% endblock %}
-    <div class="absolute flex w-full justify-center mt-5 iconos">
+    <div class="absolute flex w-full justify-center mt-20 lg:mt-5 iconos">
       <a
         href=""
         class="opacity-50 hover:opacity-100 hover:transition-all duration-700"
@@ -31,8 +31,28 @@
         <img src="{% static 'images/linkedin.svg' %}" class="mx-4" alt="" />
       </a>
     </div>
-    <nav class="p-5 absolute navbar mt-20 ml-28">
-      <ul class="flex w-1/3">
+    <nav
+      class="fixed absolute navbar w-full p-2 lg:p-5 lg:w-1/3 lg:mt-20 lg:ml-28"
+    >
+      <div class="block lg:hidden">
+        <button
+          id="boton"
+          class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
+        >
+          <svg
+            class="fill-current h-3 w-3"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <ul
+        id="menu"
+        class="flex flex-col justify-center items-center mx-auto hidden lg:flex lg:w-1/3 lg:flex-row"
+      >
         <li class="mx-5 px-3">
           <a href="#">INICIO</a>
         </li>
@@ -44,5 +64,6 @@
         </li>
       </ul>
     </nav>
+    <script src="{% static 'js/app.js' %}"></script>
   </body>
 </html>
