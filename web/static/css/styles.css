@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+
+:root {
+  --secundario: #ae7f02;
+}
+
+* {
+  font-family: "Crimson Text", serif;
+}
+.navbar {
+  z-index: 1;
+  color: white;
+  font-size: 20px;
+  top: 0px;
+}
+.pame {
+  z-index: 3;
+  top: 0px;
+  margin-left: 950px;
+  margin-top: 8px;
+  width: 930px;
+}
+
+.iconos {
+  top: 0px;
+}
+
+.titulo {
+  top: 0px;
+  font-size: 120px;
+  text-align: left;
+  left: 150px;
+  top: 350px;
+  color: white;
+  font-weight: 600;
+  line-height: 70px;
+}
+
+.nature {
+  color: var(--secundario);
+  margin: 0px;
+  padding: 0px;
+}
